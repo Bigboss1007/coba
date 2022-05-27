@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bigboss</title>
+	<link rel="stylesheet" href="program sensor ultrasonic.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+	
+	
+	<div class="container">
+		<div class="header">
+			<h1 class="judul">Bigboss</h1>	
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto">
+			      <li class="nav-item active">
+			        <a class="nav-link" href="../home/home.html">Home <span class="sr-only">(current)</span></a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="../sofware arduino/sofware_arduino.html">Download Software</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Tutorial</a>
+			      </li>
+			    </ul>
+			    <form class="form-inline my-2 my-lg-0">
+			      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			    </form>
+			  </div>
+			</nav>
+		</div>
+		
+		<div class="hero"></div>
+		<div class="content cf">
+			<div class="main">
+				<h2>CARA PROGRAM SENSOR ULTRASONIC</h2>
+				<br>
+					<img src="img/arduino.png">
+				<br>
+				<h4>Arduino</h4>
+				<p>pengendali mikro single-board yang bersifat open-source. dirancang untk memudahkan penggunaan elektronik dalam berbagai bidang. Hardware dalam arduino memiliki prosesor atmel AVR dan menggunakan software dan bahasa sendiri</p>
+				<br>
+				<h4>Prinsip Kerja Arduino</h4>
+				<p>Arduino merupakan Board Insturmen Elektronik yang tersusun dari Rangkain Perangkat pendukung Chip Mikrokontroler yang ditanamkan didalam sebuah Program. otak dari Arduino sendiri ialah Mikrokontroler yang tertanam pada setiap serinya. Setiap jenis Arduino menggunakan Mikrikintroler yang berbeda sesuai dengan kebutuhannya masing-masing</p>	
+				<br>
+					<img src="img/2.png">
+				<br>
+				<h4>Sensor Ultrasonic</h4>
+				<p>Sensor yang memiliki fungsi mengubah besaran fisis atau bunyi menjadi besaran listrik dan begitu pula sebaliknya. Gelombang bunyi yamg dihasilkan dari Sensor Ultrasonic ini dapat merambat melalui benda padat, cair maupun udara. Namun dibandingkan dengan benda padat dan udara. benda cair merupakan media merambat yang paling baik untuk Sensor Ultrasonic ini. karena alasan tersebut, Sensor Ultrasonik merupakan Sensor yang paling umum digunakan sebagai radar pada kapal selam untuk mendeteksi keberadaan suatu benda dengan memperkirakan jarak antara Sensor dan benda tersebut.</p>
+				<br>
+				<h4>Prinsip Kerja Sensor Ultrasonic</h4>
+				<p>Gelombang Ultrasonic dibangkitkan melalui Alat yang disebut dengan piozoelektrik dengan Frekuensi tertentu. Piezoelektrik ini akan menghasilkan gelombang Ultrasonic (Umumnya berfrekuensi 40KHz) ketika sebuah osilator diterapkan pada benda tersebut.</p>
+				<br>
+					<img src="img/breadboard.png">
+				<br>
+				<h4>Breadbord</h4>
+				<p>Sejenis papan roti yang biasanya digunakan untuk membuat Prototype Rangkaian Elektronik. Beberapa orang kadang menyebutkanya Project Board atau bahkan Protoboard (prototype Board).Biasanya papan Breadboard ini digunakan untuk membuat rangkaian Elektronik sementara untuk tujuan uji coba atau prototype</p>
+				<br>
+				<h4>Prinsip Kerja Breadbord</h4>
+				<p>Papan Breadboard bisa dideskripsikan sebagai papan yang memiliki lubang koneksi bedasarkan pola tertentu.Untuk menghubungkan antara satu lubang dengan lubang yang lain, maka dibagian bawah lubang tersebut terdapat logam konduktor Listrik yang diposisikan secara Khusus. ini berguna untuk memudahkan pengguna dalam membuat rangkaian</p>
+				<br>
+				<p>Ok Guys. saya tau kamu pasti sudah menunggu untuk postingan ini.Untuk Teman-teman yang yang sudah mempunyai Alatnya,Bisa mencoba Program ini</p>
+				<br>
+				<h3>Alat Yang Dibutuhkan</h3>
+				<br>
+				<ul>
+					<li>Arduino</li>
+					<li>Ultrasonik</li>
+					<li>Breadbord</li>
+					<li>Kabel Jumper Secukupnya</li>
+				</ul>
+					<br>
+				<h4>Rangkaian Seperti Gambar Dibawah ini</h4>
+				<br>
+					<img src="img/4.png">
+				<br>
+				<h4>untuk konfigurasi pinnya mari kita lihat tabel berikut ini.</h4>
+				<br>
+				<table class="table">
+					 <table class="table table-striped">
+					  <thead>
+					    <tr>
+					      <th scope="col">#</th>
+					      <th scope="col">Pin Ultrasonic</th>
+					      <th scope="col">Pin Arduino</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <th scope="row">1</th>
+					      <td>Pin 1(VCC)</td>
+					      <td>+5v</td>
+					    </tr>
+					    <tr>
+					      <th scope="row">2</th>
+					      <td>Pin 2(TRIG)</td>
+					      <td>Pin 2</td>
+					    </tr>
+					    <tr>
+					      <th scope="row">3</th>
+					      <td>Pin 3(ECHO)</td>
+					      <td>Pin 3</td>
+					    </tr>
+					    <th scope="row">4</th>
+					      <td>Pin 4(GND)</td>
+					      <td>GND</td>
+					    </tr>
+					  </tbody>
+					</table>
+				<br>
+				<h4>contoh program</h4>
+					<blockquote class="blockquote">
+					  <span>// include the library code</span>
+					  <br><br>
+					  <span style="color: #38761d;">int trig=2;</span>
+					  <span>//  membuat varibel trig yang di set ke-pin 2</span>
+					  <br><br>
+					  <span style="color: #5095d0;">int echo=3;</span>
+					  <span> // membuat variabel echo yang di set ke-pin 3</span>
+					  <br><br>
+					  <span style="color: #38761d;">long durasi, jarak;</span>
+					  <span>// membuat variabel durasi dan jarak</span>
+					  <br><br>
+					  <span style="color: #5095d0;">void setup()</span>
+					  <span style="color: #c94a2d;">{</span>
+					  <br><br>
+					  <span style="color: #38761d;">pinMode(trig, OUTPUT);</span>
+					  <span>// set pin trig menjadi OUTPUT</span>
+					  <br><br>
+					   <span style="color: #5095d0;">pinMode(echo, INPUT);</span>
+					  <span>// set pin echo menjadi INPUT</span>
+					  <br><br>
+					   <span style="color: #38761d;">Serial.begin(9600); </span>
+					  <span>// digunakan untuk komunikasi Serial dengan komputer</span>
+					  <br><br>
+					  <span style="color: #c94a2d;">}</span>
+					  <br><br>
+					  <span style="color: #5095d0;">void loop()</span>
+					  <span style="color: #c94a2d;">{</span>
+					  <br><br>
+					  <span>// program dibawah ini agar trigger memancarakan suara ultrasonic</span>
+					  <br><br>
+					  <span style="color: #38761d;">digitalWrite(trig, LOW);</span>
+					  <br><br>
+					  <span style="color: #5095d0;">delayMicroseconds(8);</span>
+					  <br><br>
+					  <span style="color: #38761d;">digitalWrite(trig, HIGH);</span>
+					  <br><br>
+					  <span style="color: #5095d0;">delayMicroseconds(8);</span>
+					  <br><br>
+					  <span style="color: #38761d;">digitalWrite(trig, LOW);</span>
+					  <br><br>
+					  <span style="color: #5095d0;">delayMicroseconds(8);</span>
+					  <br><br>
+					  <span style="color: #c94a2d;">}</span>
+					</blockquote>
+					<p>Kalau sudah Done.Kamu bisa buka Serial Monitor untuk melihat Jarak dari Sensornya. Coba Untuk Mendekatkan dan Jauhkan Tangan Dari Sensor, dan Lihat Angka Yang Ditampilakn Diserial Monitor</p>
+
+					</div>
+					<div class="sidebar">
+						<h3>tentang penulis</h3>
+						<h3>Artikel</h3>
+						<ul>
+							<li>
+							<a dir="ltr" href="program sensor ultrasonic">ARDUINO</a>
+							</li>
+						</ul>
+					</div>
+		
+
+		</div>
+	</div>
+		<div class="footer">
+			<p class="copy">Copyright 2022.
+			Bigboss.</p>
+		</div>
+	</div>
+
+</body>
+</html>
